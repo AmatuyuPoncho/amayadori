@@ -5,7 +5,7 @@ const normalFortunes = [
   },
   {
     name:'お茶日和',
-    image:'images/ocha.PNG'
+    image:'images/ochoa.PNG'
   },
   {
     name:'雨音日和',
@@ -17,7 +17,7 @@ const normalFortunes = [
   },
   {
     name:'お散歩日和',
-    image:'images/osanpo.PNG'
+    image:'images/osano.PNG'
   },
   {
     name:'おやすみ日和',
