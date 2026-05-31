@@ -1,40 +1,63 @@
 
 body{
-  margin:0;
-  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;
-  background:linear-gradient(#aee8ff,#eaf8ff);
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:20px;
+margin:0;
+padding:20px;
+font-family:-apple-system,BlinkMacSystemFont,'Hiragino Sans','Yu Gothic',sans-serif;
+background:linear-gradient(180deg,#AEE8FF,#EAF8FF);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
 }
+
 .card{
-  background:#fff;
-  width:100%;
-  max-width:520px;
-  border-radius:32px;
-  padding:32px;
-  text-align:center;
-  box-shadow:0 10px 30px rgba(120,180,220,.15);
-  border:4px solid #eefaff;
+width:100%;
+max-width:560px;
+background:#fff;
+border-radius:32px;
+padding:32px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
-h1{color:#6dbfe8;font-size:2rem;}
-p{color:#5f7f91;line-height:1.8;}
-label{display:block;margin-top:20px;color:#6dbfe8;font-weight:bold;}
+
+.logo{font-size:54px;}
+h1{color:#66BFEA;margin:10px 0;}
+.lead{color:#6c8797;line-height:1.8;}
+
+label{display:block;margin-top:20px;color:#66BFEA;font-weight:bold;}
 input{
-  width:90%;
-  padding:14px;
-  border-radius:999px;
-  border:2px solid #cfefff;
+width:90%;
+padding:14px;
+border-radius:999px;
+border:2px solid #D7F2FF;
 }
+
 button{
-  margin-top:18px;
-  padding:16px 28px;
-  border:none;
-  border-radius:999px;
-  background:#8adfff;
-  color:white;
-  font-size:18px;
+margin-top:16px;
+background:#8ADFFF;
+color:white;
+border:none;
+padding:16px 28px;
+border-radius:999px;
+font-size:18px;
+cursor:pointer;
 }
-h2,h3{color:#6dbfe8;}
+
+.resultCard{
+margin-top:24px;
+padding:20px;
+background:#F9FDFF;
+border-radius:24px;
+}
+
+.username{color:#66BFEA;font-weight:bold;}
+.fortune{font-size:32px;color:#66BFEA;margin:16px 0;font-weight:bold;}
+.text,.comment{line-height:1.8;color:#607D8B;}
+
+.footer{
+margin-top:24px;
+padding-top:16px;
+border-top:1px solid #EAF8FF;
+font-size:14px;
+color:#7B97A7;
+}
