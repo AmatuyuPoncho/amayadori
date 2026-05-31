@@ -31,12 +31,12 @@ const roll = Math.random();
 
 let f;
 
-if(roll < 0.005){
-f = legendaryFortunes[0];
-}else if(roll < 0.025){
-f = superRareFortunes[0];
-}else if(roll < 0.10){
-f = rareFortunes[0];
+if(roll < 0.05){
+f = legendaryFortunes[0];      // 5%
+}else if(roll < 0.15){
+f = superRareFortunes[0];      // 10%
+}else if(roll < 0.40){
+f = rareFortunes[0];           // 25%
 }else{
 f = normalFortunes[Math.floor(Math.random()*normalFortunes.length)];
 }
