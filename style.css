@@ -122,3 +122,11 @@ color:#fff;
 margin-top:16px;
 background:#7fd6ff;
 }
+.fortuneImage{
+width:100%;
+max-width:420px;
+display:block;
+margin:20px auto 0;
+border-radius:20px;
+cursor:pointer;
+}
