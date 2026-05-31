@@ -1,76 +1,76 @@
 const normalFortunes = [
 {
 name:'ごろごろ日和',
-image:'gorogoro.PNG'
+image:'images/gorogoro.PNG'
 },
 {
 name:'お茶日和',
-image:'ocha.PNG'
+image:'images/ocha.PNG'
 },
 {
 name:'雨音日和',
-image:'amaoto.PNG'
+image:'images/amaoto.PNG'
 },
 {
 name:'読書日和',
-image:'dokusyo.PNG'
+image:'images/dokusyo.PNG'
 },
 {
 name:'お散歩日和',
-image:'osanpo.PNG'
+image:'images/osanpo.PNG'
 },
 {
 name:'おやすみ日和',
-image:'oyasumi.PNG'
+image:'images/oyasumi.PNG'
 },
 {
 name:'ひなたぼっこ日和',
-image:'hinatabokko.PNG'
+image:'images/hinatabokko.PNG'
 },
 {
 name:'おやつ日和',
-image:'oyatsu.PNG'
+image:'images/oyatsu.PNG'
 },
 {
 name:'おたより日和',
-image:'otayori.PNG'
+image:'images/otayori.PNG'
 },
 {
 name:'おえかき日和',
-image:'oekaki.PNG'
+image:'images/oekaki.PNG'
 },
 {
 name:'深呼吸日和',
-image:'shinkokyu.PNG'
+image:'images/shinkokyu.PNG'
 },
 {
 name:'おかたづけ日和',
-image:'okataduke.PNG'
+image:'images/okataduke.PNG'
 },
 {
 name:'ROM専日和',
-image:'romusen.PNG'
+image:'images/romusen.PNG'
 }
 ];
 
 const rareFortunes = [
 {
 name:'🌈虹の日和',
-image:'rare_niji.PNG'
+image:'images/rare_niji.PNG'
 }
 ];
 
 const superRareFortunes = [
 {
 name:'💎紫陽花の祝福',
-image:'sr_ajisai.PNG'
+image:'images/sr_ajisai.PNG'
 }
 ];
 
 const legendaryFortunes = [
 {
 name:'⭐ぽたもの特等席',
-image:'legend_potamo.PNG'
+image:'images/legend_potamo.PNG'
 }
 ];
 
