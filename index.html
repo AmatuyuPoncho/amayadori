@@ -8,17 +8,47 @@
 </head>
 <body>
 <div class="card">
-<h1>☁️ ぽんちょの雨宿り ☁️</h1>
-<p>いつでもここで雨宿り。<br>今日の雨宿りはどんな感じかな？☁️</p>
+  <div class="logo">☁️</div>
+  <h1>ぽんちょの雨宿り</h1>
 
-<label>お名前</label>
-<input id="name" type="text" placeholder="お名前を入力">
+  <p class="lead">
+    いつでもここで雨宿り。<br>
+    今日の雨宿りはどんな感じかな？☁️
+  </p>
 
-<button onclick="drawFortune()">☁️ 今日の雨宿り</button>
+  <label>お名前</label>
+  <input id="name" type="text" placeholder="お名前を入力">
 
-<div id="result"></div>
+  <button onclick="drawFortune()">☁️ 今日の雨宿り</button>
+
+  <div id="result"></div>
+
+  <div class="footer">
+    ☁️ 甘梅雨ぽんちょ ☁️<br>
+    ふらっと寄れる、雨の居場所。<br>
+    @AmatuyuPoncho_V
+  </div>
 </div>
 
-<script src="script.js"></script>
+<script>
+const fortunes=[
+{name:'ごろごろ日和',text:'今日は何もしない時間も大切な日。',comment:'のんびりするのも予定のうち〜☁️'},
+{name:'お茶日和',text:'温かい飲み物を片手にひと息つこう。',comment:'ゆっくりで大丈夫〜☁️'},
+{name:'雨音日和',text:'雨音を聞きながら過ごそう。',comment:'静かな時間もいいね〜☁️'}
+];
+
+function drawFortune(){
+ const n=document.getElementById('name').value.trim();
+ if(!n){alert('お名前を入力してください☁️');return;}
+ const f=fortunes[Math.floor(Math.random()*fortunes.length)];
+ document.getElementById('result').innerHTML=`
+ <div class="resultCard">
+ <div class="username">☁️ ${n}さん ☁️</div>
+ <div class="fortune">${f.name}</div>
+ <div class="text">${f.text}</div>
+ <div class="comment">ぽたもより<br>${f.comment}</div>
+ </div>`;
+}
+</script>
 </body>
 </html>
