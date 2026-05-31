@@ -33,7 +33,7 @@ const normalFortunes = [
   },
   {
     name:'おたより日和',
-    image:'images/otayori.PNG'
+    image:'images/oratorio.PNG'
   },
   {
     name:'おえかき日和',
