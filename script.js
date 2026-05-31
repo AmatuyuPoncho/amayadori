@@ -1,22 +1,79 @@
 const normalFortunes = [
-{name:'ごろごろ日和',text:'今日は何もしない時間も大切な日。',comment:'のんびりするのも予定のうち〜☁️'},
-{name:'お茶日和',text:'温かい飲み物を片手にひと息つこう。',comment:'ゆっくりで大丈夫〜☁️'},
-{name:'雨音日和',text:'雨音を聞きながら過ごそう。',comment:'静かな時間もいいね〜☁️'},
-{name:'読書日和',text:'好きな本や漫画との出会いがあるかも。',comment:'雨宿りのお供にどうぞ☁️'},
-{name:'まったり日和',text:'今日は肩の力を抜いていこう。',comment:'のんびりが一番〜☁️'}
+{
+name:'ごろごろ日和',
+image:'gorogoro.PNG'
+},
+{
+name:'お茶日和',
+image:'ocha.PNG'
+},
+{
+name:'雨音日和',
+image:'amaoto.PNG'
+},
+{
+name:'読書日和',
+image:'dokusyo.PNG'
+},
+{
+name:'お散歩日和',
+image:'osanpo.PNG'
+},
+{
+name:'おやすみ日和',
+image:'oyasumi.PNG'
+},
+{
+name:'ひなたぼっこ日和',
+image:'hinatabokko.PNG'
+},
+{
+name:'おやつ日和',
+image:'oyatsu.PNG'
+},
+{
+name:'おたより日和',
+image:'otayori.PNG'
+},
+{
+name:'おえかき日和',
+image:'oekaki.PNG'
+},
+{
+name:'深呼吸日和',
+image:'shinkokyu.PNG'
+},
+{
+name:'おかたづけ日和',
+image:'okataduke.PNG'
+},
+{
+name:'ROM専日和',
+image:'romusen.PNG'
+}
 ];
 
 const rareFortunes = [
-{name:'🌈虹の日和',text:'雨上がりの空に小さな虹が見えるかも。',comment:'ちょっと良いことがありそう☁️'}
+{
+name:'🌈虹の日和',
+image:'rare_niji.PNG'
+}
 ];
 
 const superRareFortunes = [
-{name:'💎紫陽花の祝福',text:'優しい雨があなたを見守っている日。',comment:'ぽたもも応援しているよ☁️'}
+{
+name:'💎紫陽花の祝福',
+image:'sr_ajisai.PNG'
+}
 ];
 
 const legendaryFortunes = [
-{name:'⭐ぽたもの特等席',text:'今日はぽたもの隣席。',comment:'ゆっくり雨宿りしていってね☁️'}
+{
+name:'⭐ぽたもの特等席',
+image:'legend_potamo.PNG'
+}
 ];
+
 
 function drawFortune(){
 
