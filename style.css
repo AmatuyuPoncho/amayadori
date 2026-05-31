@@ -76,8 +76,8 @@ font-size:clamp(24px,6vw,32px);
 .text,.comment{line-height:1.8;color:#607d8b;}
 .footer{margin-top:20px;color:#7b97a7;font-size:14px;}
 .site-logo{
-width:80%;
-max-width:280px;
+width:90%;
+max-width:420px;
 height:auto;
 display:block;
 margin:0 auto 20px;
