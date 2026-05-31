@@ -100,9 +100,12 @@ function drawFortune(){
 <div class="fortuneBadge">
 ${f.name}
 </div>
-<button class="saveButton"
-onclick="showImage('${f.image}')">
-🖼️ 画像を見る </button>
+<img
+src="${f.image}"
+class="fortuneImage"
+alt="${f.name}"
+onclick="window.open('${f.image}','_blank')"
+>
 </div>
   `;
 }
