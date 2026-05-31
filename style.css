@@ -1,37 +1,77 @@
 
 body{
-margin:0;padding:20px;
-font-family:sans-serif;
+margin:0;
+padding:16px;
+font-family:-apple-system,BlinkMacSystemFont,'Hiragino Sans','Yu Gothic',sans-serif;
 background:linear-gradient(#AEE8FF,#EAF8FF);
-min-height:100vh;display:flex;justify-content:center;align-items:center;
-position:relative;overflow-x:hidden;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
 }
-.bg-deco{position:fixed;font-size:90px;opacity:.35;bottom:20px}
-.left{left:10px}.right{right:10px}
 .card{
-background:white;max-width:560px;width:100%;
-border-radius:36px;padding:30px;text-align:center;
+background:#fff;
+width:100%;
+max-width:560px;
+border-radius:36px;
+padding:24px;
+text-align:center;
 box-shadow:0 12px 30px rgba(0,0,0,.08);
 }
-.raindrops{color:#9edcff;margin-bottom:10px}
-.potamo{font-size:56px}
-h1{color:#78cffa;font-size:2.6rem;margin:8px 0}
-.lead{color:#6f8898;line-height:1.8}
-label{display:block;color:#78cffa;font-weight:bold;margin-top:20px}
-input{width:90%;padding:14px;border-radius:999px;border:2px solid #cfefff}
+.raindrops{color:#9edcff;font-size:28px;}
+.potamo{font-size:72px;line-height:1;}
+h1{
+color:#78cffa;
+font-size:clamp(38px,8vw,52px);
+line-height:1.15;
+margin:12px 0 20px;
+word-break:keep-all;
+}
+.lead{color:#6f8898;line-height:1.8;}
+label{display:block;color:#78cffa;font-weight:bold;margin-top:20px;}
+input{
+width:90%;
+padding:14px;
+border-radius:999px;
+border:2px solid #cfefff;
+}
 button{
-margin-top:18px;padding:16px 30px;border:none;border-radius:999px;
-background:#8ADFFF;color:white;font-size:20px;
+margin-top:18px;
+padding:16px 30px;
+border:none;
+border-radius:999px;
+background:#8ADFFF;
+color:white;
+font-size:20px;
 }
 .resultCard{
-margin-top:24px;background:#f8fdff;border:2px solid #e5f7ff;
-border-radius:24px;padding:20px;
+margin-top:24px;
+background:#f8fdff;
+border:2px solid #e5f7ff;
+border-radius:24px;
+padding:20px;
+position:relative;
 }
-.username{color:#78cffa;font-weight:bold}
+.resultCard:before,
+.resultCard:after{
+content:"🪻";
+position:absolute;
+font-size:52px;
+opacity:.8;
+bottom:8px;
+}
+.resultCard:before{left:8px;}
+.resultCard:after{right:8px;}
+.username{color:#78cffa;font-weight:bold;}
 .fortuneBadge{
-display:inline-block;margin:12px 0;padding:10px 22px;
-background:#dff5ff;border-radius:999px;
-color:#67bee8;font-weight:bold;font-size:28px;
+display:inline-block;
+margin:12px 0;
+padding:10px 22px;
+background:#dff5ff;
+border-radius:999px;
+color:#67bee8;
+font-weight:bold;
+font-size:clamp(24px,6vw,32px);
 }
-.text,.comment{line-height:1.8;color:#607d8b}
-.footer{margin-top:20px;color:#7b97a7;font-size:14px}
+.text,.comment{line-height:1.8;color:#607d8b;}
+.footer{margin-top:20px;color:#7b97a7;font-size:14px;}
