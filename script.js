@@ -30,20 +30,23 @@ return;
 const roll = Math.random();
 
 let f;
-let rarity;
+let rarityClass;
 
 if(roll < 0.05){
 f = legendaryFortunes[0];
-rarity = "⭐伝説";
+rarityClass = "legendary";
+
 }else if(roll < 0.15){
 f = superRareFortunes[0];
-rarity = "💎超レア";
+rarityClass = "superRare";
+
 }else if(roll < 0.40){
 f = rareFortunes[0];
-rarity = "🌈レア";
+rarityClass = "rare";
+
 }else{
 f = normalFortunes[Math.floor(Math.random() * normalFortunes.length)];
-rarity = "☁️通常";
+rarityClass = "normal";
 }
 
 document.getElementById('result').innerHTML = `
