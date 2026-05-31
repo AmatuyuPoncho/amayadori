@@ -30,24 +30,6 @@
   </div>
 </div>
 
-<script>
-const fortunes=[
-{name:'ごろごろ日和',text:'今日は何もしない時間も大切な日。',comment:'のんびりするのも予定のうち〜☁️'},
-{name:'お茶日和',text:'温かい飲み物を片手にひと息つこう。',comment:'ゆっくりで大丈夫〜☁️'},
-{name:'雨音日和',text:'雨音を聞きながら過ごそう。',comment:'静かな時間もいいね〜☁️'}
-];
-function drawFortune(){
-const n=document.getElementById('name').value.trim();
-if(!n){alert('お名前を入力してください☁️');return;}
-const f=fortunes[Math.floor(Math.random()*fortunes.length)];
-document.getElementById('result').innerHTML=`
-<div class="resultCard">
-<div class="username">☁️ ${n}さん ☁️</div>
-<div class="fortuneBadge">${f.name}</div>
-<div class="text">${f.text}</div>
-<div class="comment">ぽたもより<br>${f.comment}</div>
-</div>`;
-}
-</script>
+<script src="script.js"></script>
 </body>
 </html>
