@@ -20,7 +20,7 @@ const legendaryFortunes = [
 
 function drawFortune(){
 
-const n=document.getElementById('name').value.trim();
+const n = document.getElementById('name').value.trim();
 
 if(!n){
 alert('お名前を入力してください☁️');
@@ -30,15 +30,20 @@ return;
 const roll = Math.random();
 
 let f;
+let rarity;
 
 if(roll < 0.05){
-f = legendaryFortunes[0];      // 5%
+f = legendaryFortunes[0];
+rarity = "⭐伝説";
 }else if(roll < 0.15){
-f = superRareFortunes[0];      // 10%
+f = superRareFortunes[0];
+rarity = "💎超レア";
 }else if(roll < 0.40){
-f = rareFortunes[0];           // 25%
+f = rareFortunes[0];
+rarity = "🌈レア";
 }else{
-f = normalFortunes[Math.floor(Math.random()*normalFortunes.length)];
+f = normalFortunes[Math.floor(Math.random() * normalFortunes.length)];
+rarity = "☁️通常";
 }
 
 document.getElementById('result').innerHTML = `
