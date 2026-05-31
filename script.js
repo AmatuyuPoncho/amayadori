@@ -83,9 +83,9 @@ function drawFortune(){
   let f;
   if(roll < 0.05){
     f = legendaryFortunes[0];
-  }else if(roll < 0.15){
+  }else if(roll < 0.10){
     f = superRareFortunes[0];
-  }else if(roll < 0.40){
+  }else if(roll < 0.20){
     f = rareFortunes[0];
   }else{
     f = normalFortunes[
