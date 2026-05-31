@@ -51,10 +51,47 @@ rarityClass = "normal";
 
 document.getElementById('result').innerHTML = `
 
- <div class="resultCard">
-   <div class="username">☁️ ${n}さん ☁️</div>
-   <div class="fortuneBadge">${f.name}</div>
-   <div class="text">${f.text}</div>
-   <div class="comment">ぽたもより<br>${f.comment}</div>
- </div>`;
+<div id="captureArea" class="resultCard ${rarityClass}">
+
+<div class="username">
+☁️ ${n}さん ☁️
+</div>
+
+<div class="fortuneBadge">
+${f.name}
+</div>
+
+<div class="text">
+${f.text}
+</div>
+
+<div class="comment">
+ぽたもより<br>
+${f.comment}
+</div>
+
+<button class="saveButton" onclick="saveResult()">
+💾 結果を保存
+</button>
+
+</div>
+`;
+}
+
+function saveResult(){
+
+const element = document.getElementById('captureArea');
+
+html2canvas(element).then(canvas => {
+
+const link = document.createElement('a');
+
+link.download = 'poncho-result.png';
+
+link.href = canvas.toDataURL('image/png');
+
+link.click();
+
+});
+
 }
