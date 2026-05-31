@@ -52,16 +52,6 @@ border-radius:24px;
 padding:20px;
 position:relative;
 }
-.resultCard:before,
-.resultCard:after{
-content:"🪻";
-position:absolute;
-font-size:52px;
-opacity:.8;
-bottom:8px;
-}
-.resultCard:before{left:8px;}
-.resultCard:after{right:8px;}
 .username{color:#78cffa;font-weight:bold;}
 .fortuneBadge{
 display:inline-block;
