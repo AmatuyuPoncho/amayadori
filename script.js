@@ -59,15 +59,16 @@ function drawFortune(){
   `;
 }
 
-function shareOnX(fortuneName, imageUrl){
+function shareOnX(fortuneName){
   const username = document.getElementById('name').value.trim();
   if(!username) return;
 
-  // 投稿テキスト
-  const text = `☁️ ${username}さんの今日の雨宿りは「${fortuneName}」☁️`;
+  const text = `☁️ ${username}さんの今日の雨宿り☁️\n` +
+               `【${fortuneName}】\n` +
+               `ぽんちょの雨宿りで今日の気分を楽しもう！\n` +
+               `https://amatuyuponcho.github.io/amayadori/`;
 
-  // X 投稿用URL（画像はリンクカードとして表示）
-  const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(imageUrl)}`;
+  const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
 
   window.open(url, '_blank');
 }
