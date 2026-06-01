@@ -50,8 +50,7 @@ const normalFortunes = [
   {
     name:'ROM専日和',
     image:'images/romusen.PNG'
-  }
-  ,
+  },
   {
     name:'窓辺日和',
     image:'images/madobe.PNG'
@@ -148,6 +147,9 @@ class="fortuneImage"
 alt="${f.name}"
 onclick="window.open('${f.image}','_blank')"
 >
+<button class="shareButton" onclick="shareOnX()">
+  🐦 Xでシェア
+</button>
 </div>
   `;
 }
@@ -162,4 +164,22 @@ function saveResult(){
     link.href = canvas.toDataURL('image/png');
     link.click();
   });
+}
+function shareOnX() {
+  const username = document.getElementById('name').value.trim();
+  if(!username) return;
+
+  // 結果カードのタイトルを取得
+  const fortuneName = document.querySelector('.fortuneBadge').innerText;
+
+  // X 投稿用のテキスト例
+  const text = `☁️ ${username}さんの今日の雨宿りは「${fortuneName}」☁️\n` +
+               `ぽんちょの雨宿りで今日の気分を楽しもう！\n` +
+               `https://amatuyuponcho.github.io/amayadori/`;
+
+  // X のシェア用URL
+  const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
+
+  // 新しいタブで開く
+  window.open(url, '_blank');
 }
