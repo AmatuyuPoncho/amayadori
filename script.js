@@ -51,6 +51,48 @@ const normalFortunes = [
     name:'ROM専日和',
     image:'images/romusen.PNG'
   }
+  ,
+  {
+    name:'窓辺日和',
+    image:'images/madobe.PNG'
+  },
+  {
+    name:'音楽日和',
+    image:'images/ongaku.PNG'
+  },
+  {
+    name:'思い出日和',
+    image:'images/omoide.PNG'
+  },
+  {
+    name:'おりょうり日和',
+    image:'images/oryouri.PNG'
+  },
+  {
+    name:'水やり日和',
+    image:'images/mizuyari.PNG'
+  },
+  {
+    name:'てづくり日和',
+    image:'images/tedukuri.PNG'
+  },
+  {
+    name:'星空日和',
+    image:'images/hoshizora.PNG'
+  },
+  {
+    name:'せんたく日和',
+    image:'images/sentaku.PNG'
+  },
+  {
+    name:'空想日和',
+    image:'images/kuusou.PNG'
+  },
+  {
+    name:'かいもの日和',
+    image:'images/kaimono.PNG'
+  }
+  
 ];
 
 const rareFortunes = [
