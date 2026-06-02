@@ -25,7 +25,7 @@ const normalFortunes = [
 ];
 
 const rareFortunes = [{name:'🌈虹の日和', image:'images/rare_niji.PNG'}];
-const superRareFortunes = [{name:'💎紫陽花の祝福', image:'images/sr_ajisai.PNG'}];
+const superRareFortunes = [{name:'🪻紫陽花の祝福', image:'images/sr_ajisai.PNG'}];
 const legendaryFortunes = [{name:'👑ぽたもの特等席', image:'images/legend_potamo.PNG'}];
 const comments = {
   'ごろごろ日和':'のんびりするのも予定のうち☁️🛋️',
@@ -53,7 +53,7 @@ const comments = {
   'かいもの日和':'欲しかったものに出会えるかも☁️🛍️',
 
   '🌈虹の日和':'ちょっと良いことがありそう☁️🌈',
-  '💎紫陽花の祝福':'ぽたもも応援しているよ☁️💎',
+  '🪻紫陽花の祝福':'ぽたもも応援しているよ☁️💎',
   '👑ぽたもの特等席':'今日はぽたもの隣で雨宿り☁️👑'
 };
 
