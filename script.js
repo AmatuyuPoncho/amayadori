@@ -3,7 +3,7 @@ const normalFortunes = [
   {name:'お茶日和', image:'images/ochoa.PNG'},
   {name:'雨音日和', image:'images/amaoto.PNG'},
   {name:'読書日和', image:'images/dokusyo.PNG'},
-  {name:'お散歩日和', image:'images/osanpo.PNG'},
+  {name:'お散歩日和', image:'images/osano.PNG'},
   {name:'おやすみ日和', image:'images/oyasumi.PNG'},
   {name:'ひなたぼっこ日和', image:'images/hinatabokko.PNG'},
   {name:'おやつ日和', image:'images/oyatsu.PNG'},
