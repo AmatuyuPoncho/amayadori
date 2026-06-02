@@ -98,10 +98,11 @@ function shareOnX(fortuneName){
   const text =
 `☁️ ${username}さんの今日の雨宿り ☁️
 
-【${fortuneName}】 ${comment}
+【${fortuneName}】
+${comment}
 
 https://amatuyuponcho.github.io/amayadori/
-☔️みんなもぽたもからの日和を受け取ってね
+☔️みんなも今日の日和を受け取ってね
 
 #ぽんちょの雨宿り　#甘梅雨ぽんちょ`;
   const url =
