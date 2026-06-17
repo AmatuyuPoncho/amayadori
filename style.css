@@ -53,6 +53,13 @@ word-break:keep-all;
 .card h1{
   font-size:clamp(28px,6vw,40px);
 }
+
+/* h2 inside cards: size between h1 and p */
+.card h2{
+  font-size:clamp(20px,4.5vw,28px);
+  line-height:1.2;
+  margin:10px 0 12px;
+}
 .story{
   text-align:left;
   margin-top:16px;
