@@ -49,6 +49,10 @@ line-height:1.15;
 margin:12px 0 20px;
 word-break:keep-all;
 }
+/* slightly smaller h1 inside cards */
+.card h1{
+  font-size:clamp(28px,6vw,40px);
+}
 .story{
   text-align:left;
   margin-top:16px;
