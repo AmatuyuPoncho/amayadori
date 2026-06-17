@@ -6,6 +6,7 @@ font-family:-apple-system,BlinkMacSystemFont,'Hiragino Sans','Yu Gothic',sans-se
 background:linear-gradient(#AEE8FF,#EAF8FF);
 min-height:100vh;
 display:flex;
+flex-direction:column;
 justify-content:center;
 align-items:center;
 }
@@ -17,6 +18,23 @@ border-radius:36px;
 padding:24px;
 text-align:center;
 box-shadow:0 12px 30px rgba(0,0,0,.08);
+margin:12px 0;
+}
+.story{
+  text-align:left;
+  margin-top:16px;
+}
+.story p{
+  margin:0 0 1em;
+  color:#607d8b;
+  line-height:1.8;
+  font-size:18px;
+}
+.story p.scene-title{
+  font-size:clamp(24px,5vw,32px);
+  font-weight:700;
+  color:#4f7b98;
+  margin:1.4em 0 0.9em;
 }
 .raindrops{color:#9edcff;font-size:28px;}
 .potamo{font-size:72px;line-height:1;}
@@ -26,6 +44,22 @@ font-size:clamp(38px,8vw,52px);
 line-height:1.15;
 margin:12px 0 20px;
 word-break:keep-all;
+}
+.story{
+  text-align:left;
+  margin-top:16px;
+}
+.story p{
+  margin:0 0 1em;
+  color:#607d8b;
+  line-height:1.8;
+  font-size:18px;
+}
+.story p.scene-title{
+  font-size:clamp(24px,5vw,32px);
+  font-weight:700;
+  color:#4f7b98;
+  margin:1.4em 0 0.9em;
 }
 .lead{color:#6f8898;line-height:1.8;}
 label{display:block;color:#78cffa;font-weight:bold;margin-top:20px;}
@@ -119,4 +153,14 @@ display:block;
 margin:20px auto 0;
 border-radius:20px;
 cursor:pointer;
+}
+
+/* novel image styling */
+.novel-image{
+  width:100%;
+  max-width:360px;
+  height:auto;
+  display:block;
+  margin:12px auto;
+  border-radius:16px;
 }
